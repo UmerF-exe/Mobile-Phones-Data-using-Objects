@@ -90,3 +90,10 @@ var mobile = {
         }
     }
 }
+
+let company = document.getElementById("company").value;
+let model = document.getElementById("model").value;
+
+for (var key in mobile){
+    company.innerHTML += `<option vlaue="${key}">${key}</option>`
+}
