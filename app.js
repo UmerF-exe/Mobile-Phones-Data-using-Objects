@@ -91,9 +91,46 @@ var mobile = {
     }
 }
 
-let company = document.getElementById("company").value;
-let model = document.getElementById("model").value;
+let company = document.getElementById("company");
+let model = document.getElementById("model");
 
 for (var key in mobile){
-    company.innerHTML += `<option vlaue="${key}">${key}</option>`
+    company.innerHTML += `<option vlaue="${key}">${key}</option>`;
+}
+
+function selectModel(){
+    model.innerHTML = `<option value="Select the Model">Select the Model</option>`;
+    for (var key in mobile[company.value]){
+        model.innerHTML += `<option vlaue="${key}">${key}</option>`;
+    }
+}
+
+function searchMobile(){
+    if(model.value == "iPhone11"){
+        alert(model.value);
+    }
+    else if(model.value == "iPhone12"){
+        alert(model.value);
+    }
+    else if(model.value == "samsungA56"){
+        alert(model.value);
+    }
+    else if(model.value == "oppoF16"){
+        alert(model.value);
+    }
+    else if(model.value == "vivoY20"){
+        alert(model.value);
+    }
+    else if(model.value == "redme13"){
+        alert(model.value);
+    }
+    else if(model.value == "infinixHot8"){
+        alert(model.value);
+    }
+    else if(model.value == "nokiaTurboPro"){
+        alert(model.value);
+    }
+    else{
+        alert(model.value);
+    }
 }

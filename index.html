@@ -10,13 +10,13 @@
     <div class="container">
         <div class="display">
             <h1>Mobile Phones</h1>
-            <select id="company">
+            <select id="company" onchange="selectModel()">
                 <option value="Select the company">Select the company</option>
             </select>
             <select id="model">
                 <option value="Select the model">Select the model</option>
             </select>
-            <button>Search</button>
+            <button onclick="searchMobile()">Search</button>
         </div>
         <div class="result" id="result">
 
