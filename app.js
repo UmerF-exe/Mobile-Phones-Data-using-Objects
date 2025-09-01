@@ -110,7 +110,7 @@ let result = document.getElementById("result");
 function searchMobile(){
     phone = model.value;
     if(phone == "iPhone11"){
-        result.innerHTML = `<h1>Apple iPhone 11</h1><img src="Images/apple-iphone-11.jpg"/><p id="para">Name: ${mobile.iphone.iPhone11.name}</p><p id="para">Released: ${mobile.iphone.iPhone11.released}</p><p id="para">Display: ${mobile.iphone.iPhone11.display} inch</p><p id="para">Camera: ${mobile.iphone.iPhone11.camera}</p><p id="para">Storage: ${mobile.iphone.iPhone11.storage}</p><p id="para">Battery: ${mobile.iphone.iPhone11.battery}</p><p id="para">iOS: ${mobile.iphone.iPhone11.iOS}</p><p id="para">Weight: ${mobile.iphone.iPhone11.weight}</p><p id="para">Price: ${mobile.iphone.iPhone11.price}</p>`;
+        result.innerHTML = `<h1>Apple iPhone 11</h1><div class="data"><div><img src="Images/apple-iphone-11.jpg"/></div><div class="para"><p>Name: ${mobile.iphone.iPhone11.name}</p><p>Released: ${mobile.iphone.iPhone11.released}</p><p>Display: ${mobile.iphone.iPhone11.display} inch</p><p>Camera: ${mobile.iphone.iPhone11.camera}</p><p>Storage: ${mobile.iphone.iPhone11.storage}</p><p>Battery: ${mobile.iphone.iPhone11.battery}</p><p>iOS: ${mobile.iphone.iPhone11.iOS}</p><p>Weight: ${mobile.iphone.iPhone11.weight}</p><p>Price: ${mobile.iphone.iPhone11.price}</p></div></div>`;
     }
     else if(phone == "iPhone12"){
         alert(model.value);
