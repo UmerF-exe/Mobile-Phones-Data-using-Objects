@@ -1,5 +1,5 @@
 .container{
-    width: 450px; height: auto; margin: 0 auto; padding: 10px; border: 1px solid black; border-radius: 10px;
+    width: 600px; height: auto; margin: 0 auto; padding: 10px; border: 1px solid black; border-radius: 10px;
 }
 .container>.display{
     width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -14,8 +14,43 @@
     width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;
 }
 .data{
-    width: 100%; display: flex; justify-content: space-evenly; align-items: center;
+    width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center;
+}
+.img{
+    width: 300px;
+}
+.nokia{
+    width: 300px;
+}
+.img>image{
+    width: 100%;
 }
 .para{
-    display: flex; flex-direction: column;
+    width: 250px; display: flex; flex-direction: column;
+}
+
+
+@media only screen and (max-width: 620px){
+.container{
+    width: 500px;
+}
+.img{
+    width: 250px;
+}
+.nokia{
+    width: 250px;
+}
+.para{
+    width: 200px;
+}
+}
+@media only screen and (max-width: 550px){
+.container{
+    width: 400px;
+}
+}
+@media only screen and (max-width: 450px){
+.container{
+    width: 350px;
+}
 }
