@@ -10,3 +10,9 @@
 .container>.display>button{
     width: 150px; padding: 10px; border: 1px solid blue; border-radius: 50px; background-color: blue; color: white; cursor: pointer; text-transform: uppercase;
 }
+.result{
+    width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+#para{
+    text-align: left;
+}

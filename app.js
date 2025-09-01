@@ -91,6 +91,7 @@ var mobile = {
     }
 }
 
+console.log(mobile.iphone.iPhone11.name);
 let company = document.getElementById("company");
 let model = document.getElementById("model");
 
@@ -105,29 +106,31 @@ function selectModel(){
     }
 }
 
+let result = document.getElementById("result");
 function searchMobile(){
-    if(model.value == "iPhone11"){
+    phone = model.value;
+    if(phone == "iPhone11"){
+        result.innerHTML = `<h1>Apple iPhone 11</h1><img src="Images/apple-iphone-11.jpg"/><p id="para">Name: ${mobile.iphone.iPhone11.name}</p><p id="para">Released: ${mobile.iphone.iPhone11.released}</p><p id="para">Display: ${mobile.iphone.iPhone11.display} inch</p><p id="para">Camera: ${mobile.iphone.iPhone11.camera}</p><p id="para">Storage: ${mobile.iphone.iPhone11.storage}</p><p id="para">Battery: ${mobile.iphone.iPhone11.battery}</p><p id="para">iOS: ${mobile.iphone.iPhone11.iOS}</p><p id="para">Weight: ${mobile.iphone.iPhone11.weight}</p><p id="para">Price: ${mobile.iphone.iPhone11.price}</p>`;
+    }
+    else if(phone == "iPhone12"){
         alert(model.value);
     }
-    else if(model.value == "iPhone12"){
+    else if(phone == "samsungA56"){
         alert(model.value);
     }
-    else if(model.value == "samsungA56"){
+    else if(phone == "oppoF16"){
         alert(model.value);
     }
-    else if(model.value == "oppoF16"){
+    else if(phone == "vivoY20"){
         alert(model.value);
     }
-    else if(model.value == "vivoY20"){
+    else if(phone == "redme13"){
         alert(model.value);
     }
-    else if(model.value == "redme13"){
+    else if(phone == "infinixHot8"){
         alert(model.value);
     }
-    else if(model.value == "infinixHot8"){
-        alert(model.value);
-    }
-    else if(model.value == "nokiaTurboPro"){
+    else if(phone == "nokiaTurboPro"){
         alert(model.value);
     }
     else{
